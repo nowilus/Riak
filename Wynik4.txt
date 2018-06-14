@@ -1,0 +1,13 @@
+sudo curl http://localhost:8098/types/lokalizacje/buckets/s17935/keys/Paryz -i
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/fmZ4tH1iYPBTymBKZM5jZTAxmXKFLwsA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s17935>; rel="up"
+Last-Modified: Tue, 12 Jun 2018 12:10:28 GMT
+ETag: "5mpHXqzUPtLbh123T7CS1T"
+Date: Tue, 12 Jun 2018 12:10:40 GMT
+Content-Type: application/json
+Content-Length: 60
+
+{"Kraj": "Francja", "Miasto" : "Paryz", "Czy stolica": true}

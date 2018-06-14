@@ -1,0 +1,1 @@
+Polecam otwierac w notepad++ poniewa¿ notatnik wyœwietla wszystko w jednej linijce.

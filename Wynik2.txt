@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/fma4pQYzMPgpZzAlMuexMmgZT7nClwUA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s17935>; rel="up"
+Last-Modified: Tue, 12 Jun 2018 12:06:02 GMT
+ETag: "48Zrm8w7pDELvWrxC50qWU"
+Date: Tue, 12 Jun 2018 12:06:10 GMT
+Content-Type: application/json
+Content-Length: 98
+
+{"Kraj": "Hiszpania", "Miasto" : "Barcelona", "Czy stolica": false, "LiczbaMieszkancow" : 7000000}

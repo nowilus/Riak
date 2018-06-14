@@ -1,0 +1,16 @@
+Pierwszy odczyt z bazy: 
+{"Kraj": "Polska", "Miasto": "Warszawa"}
+
+
+
+Drugi odczyt z bazy po update: 
+{"CzyStolica": "Tak", "Kraj": "Polska", "Miasto": "Warszawa"}
+
+
+
+Usuwanie rekordu...
+
+
+
+Brak rekordu w bazie
+

@@ -1,0 +1,58 @@
+1a.sudo riak-admin bucket-type create lokalizacje '{"props":{"allow_mult": false}}'
+1b.sudo riak-admin bucket-type activate lokalizacje
+1c.sudo curl -XPUT \
+ -H "Content-Type: application/json" \
+ -d '{"Kraj": "Polska", "Miasto" : "Warszawa", "Czy stolica": true, "LiczbaMieszkancow" : 2000000}' \
+ http://localhost:8098/types/lokalizacje/buckets/s17935/keys/Warszawa?w=1&retunbody=true
+
+1d.sudo curl -XPUT \
+ -H "Content-Type: application/json" \
+ -d '{"Kraj": "Polska", "Miasto" : "Krakow", "Czy stolica": false, "LiczbaMieszkancow" : 1000000}' \
+ http://localhost:8098/types/lokalizacje/buckets/s17935/keys/Krakow?w=1&retunbody=true
+
+1e.sudo curl -XPUT \
+ -H "Content-Type: application/json" \
+ -d '{"Kraj": "Francja", "Miasto" : "Paryz", "Czy stolica": true, "LiczbaMieszkancow" : 5000000}' \
+ http://localhost:8098/types/lokalizacje/buckets/s17935/keys/Paryz?w=1&retunbody=true
+
+1f.sudo curl -XPUT \
+ -H "Content-Type: application/json" \
+ -d '{"Kraj": "Niemcy", "Miasto" : "Monachium", "Czy stolica": false, "LiczbaMieszkancow" : 8000000}' \
+ http://localhost:8098/types/lokalizacje/buckets/s17935/keys/Monachium?w=1&retunbody=true
+
+1g.sudo curl -XPUT \
+ -H "Content-Type: application/json" \
+ -d '{"Kraj": "Hiszpania", "Miasto" : "Barcelona", "Czy stolica": false, "LiczbaMieszkancow" : 7000000}' \
+ http://localhost:8098/types/lokalizacje/buckets/s17935/keys/Barcelona?w=1&retunbody=true
+
+2.sudo curl http://localhost:8098/types/lokalizacje/buckets/s17935/keys/Barcelona -i
+
+3.sudo curl -XPUT \
+ -H "Content-Type: application/json" \
+ -d '{"Kraj": "Hiszpania", "Miasto" : "Barcelona", "Czy stolica": false, "LiczbaMieszkancow" : 7000000, "PosiadaDruzynePilkarska" : true }' \
+ http://localhost:8098/types/lokalizacje/buckets/s17935/keys/Barcelona?w=1&retunbody=true
+ 
+4. sudo curl -XPUT \
+ -H "Content-Type: application/json" \
+ -d '{"Kraj": "Francja", "Miasto" : "Paryz", "Czy stolica": true}' \
+ http://localhost:8098/types/lokalizacje/buckets/s17935/keys/Paryz?w=1&retunbody=true
+
+5.sudo curl -XPUT \
+ -H "Content-Type: application/json" \
+ -d '{"Kraj": "Polska", "Miasto" : "Krakow", "Czy stolica": false, "LiczbaMieszkancow" : 1500000}' \
+ http://localhost:8098/types/lokalizacje/buckets/s17935/keys/Krakow?w=1&retunbody=true
+
+6.sudo curl -XDELETE http://localhost:8098/types/lokalizacje/buckets/s17935/keys/Monachium -i
+
+7.sudo curl http://localhost:8098/types/lokalizacje/buckets/s17935/keys/Madryt -i
+
+8.sudo curl -XPOST \
+ -H "Content-Type: application/json" \
+ -d '{"Prawda": true}' \
+ http://localhost:8098/types/lokalizacje/buckets/s17935/keys?w=1&retunbody=true
+
+9.sudo curl http://localhost:8098/types/lokalizacje/buckets/s17935/keys/KHpAeeE3Hjf7h14R33WencyqESA -i
+
+10.sudo curl -XDELETE http://localhost:8098/types/lokalizacje/buckets/s17935/keys/KHpAeeE3Hjf7h14R33WencyqESA -i
+
+

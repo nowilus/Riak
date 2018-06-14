@@ -1,0 +1,13 @@
+sudo curl http://localhost:8098/types/lokalizacje/buckets/s17935/keys/Krakow -i
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/fmY4L57LwOCnmsGUyJTHyjDTZMoVviwA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s17935>; rel="up"
+Last-Modified: Tue, 12 Jun 2018 12:12:09 GMT
+ETag: "8ftSWFUbqCJoz2biWMTfD"
+Date: Tue, 12 Jun 2018 12:12:21 GMT
+Content-Type: application/json
+Content-Length: 92
+
+{"Kraj": "Polska", "Miasto" : "Krakow", "Czy stolica": false, "LiczbaMieszkancow" : 1500000}

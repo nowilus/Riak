@@ -1,0 +1,13 @@
+sudo curl http://localhost:8098/types/lokalizacje/buckets/s17935/keys/Barcelona -i
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8ypz/fma4pQYzMPgpZzAlsuaxMsw1nnKFLwsA
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s17935>; rel="up"
+Last-Modified: Tue, 12 Jun 2018 12:07:57 GMT
+ETag: "2TdKpvfTd7JBBGFcQGYoHm"
+Date: Tue, 12 Jun 2018 12:08:39 GMT
+Content-Type: application/json
+Content-Length: 133
+
+{"Kraj": "Hiszpania", "Miasto" : "Barcelona", "Czy stolica": false, "LiczbaMieszkancow" : 7000000, "PosiadaDruzynePilkarska" : true }
